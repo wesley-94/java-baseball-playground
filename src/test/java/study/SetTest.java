@@ -49,7 +49,7 @@ public class SetTest {
 
     @ParameterizedTest
     @CsvSource(value = {"1:True", "2:True", "3:True", "4:False", "5:False"}, delimiter = ':')
-    void containsV2(int input, boolean tf) {
+    void containsV3(int input, boolean tf) {
         assertThat(checkOverThree(input)).isEqualTo(tf);
     }
 }
